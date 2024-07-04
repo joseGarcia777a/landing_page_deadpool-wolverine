@@ -1,0 +1,21 @@
+@use 'variaveis';
+
+.rodape {
+    background-color: variaveis.$corFundoUm;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & :nth-child(1){
+        padding-top: 50px;
+    }
+
+    .text__small {
+        color: variaveis.$corFundoTresBaixa;
+        text-align: center;
+        width: 800px;
+    }
+}

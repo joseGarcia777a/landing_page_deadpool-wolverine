@@ -1,0 +1,50 @@
+@use 'variaveis';
+
+header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(120deg, variaveis.$corFundoTresBaixa 65%, variaveis.$corFundoUm 50%);
+    .menu--barra {
+        position: relative;
+        height: 80px;
+        background: linear-gradient(120deg, variaveis.$corFundoTres 65%, variaveis.$corFundoUm 50%);
+        filter: blur(25px) opacity(35%);
+    }
+
+    .menu {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        margin: 0 auto;
+        padding: 0 7%;
+        padding-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        &__logo {
+            max-width: 60px;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 300px;
+
+            &__li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: variaveis.$corFundoTresBaixa;
+
+                    &:hover {
+                        color: variaveis.$corFundoTres;
+                    }
+                }
+            }
+        }
+    }
+}

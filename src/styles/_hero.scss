@@ -1,0 +1,21 @@
+@use 'variaveis';
+
+.hero {
+    max-width: 100%;
+    height: 70vw;
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+    
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__titulo {
+            max-width: 300px;
+            width: 100%;
+            padding-top: 25px;
+        }
+    }
+}

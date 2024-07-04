@@ -1,0 +1,45 @@
+@use 'hero';
+@use 'videos';
+@use 'variaveis';
+@use 'sinopse';
+@use 'rodape';
+@use 'menu';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.title {
+    color: variaveis.$corTextoDois;
+    font-size: 34px;
+}
+
+.sub-title {
+    color: variaveis.$corFundoTres;
+    font-size: 18px;
+}
+
+.text {
+    color: variaveis.$corFundoTres;
+    font-size: 14px;
+}
+
+.text__small {
+    color: variaveis.$corTextoDois;
+    font-size: 12px;
+}
+
+.bi-facebook {
+    fill: #1C69FF;
+}
+
+.bi-youtube {
+    fill: #E13725;
+}
+
+.bi-instagram {
+    fill: #FA4365;
+}
